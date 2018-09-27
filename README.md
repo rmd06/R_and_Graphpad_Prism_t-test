@@ -1,4 +1,4 @@
-## Common Statistical Tests in R and and Graphpad Prism: Student's t-test
+## Common Statistical Tests in R and and Graphpad® Prism: Student's t-test
 
 ### Synopsis
 The student's t-test was first created by William Gosset, while doing analyses on beer in the Guiness Brewery in Dublin [[citation needed]()].  Gosset used the pseudonym "Student" on the paper that he published with the results, and the test that he developed became known as the "Student's T-test", or simply a "t-test".
