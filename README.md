@@ -1,7 +1,6 @@
-## Common Statistical Tests in R and and Graphpad Prism: ANOVA
+## Common Statistical Tests in R and and Graphpad Prism: Student's t-test
 
-### Student's T-test
-Synopsis:
+### Synopsis
 The student't t-test was first created by William Gosset, while doing analyses on beer in the Guiness Brewery in Dublin [[citation needed]()].  Gosset used the pseudonym "Student" on the paper that he published with the results, and the test that he developed became known as the "Student's T-test", or simply a "t-test".
 
 There are a few different ways to run the t-test, but the methods to perform the test on each variant is similar in GraphPad Prism and R.  Briefly, the tails for the t-test refer to how the data should be measured, meaning [does the data go in one direction, or two](https://stats.idre.ucla.edu/other/mult-pkg/faq/general/faq-what-are-the-differences-between-one-tailed-and-two-tailed-tests/).  Nearly all biological experiments should use a two-tailed t-test.  A paired t-test is typically used for datasets that are linked to each other in some way, such as treating cells at timepoint 1, then treating the same cells at timepoint 2, and testing whether the results are statistically significant. An unpaired t-test tests whether two unrelated datasets, such as if cells treated with Chemical X versus cells treated with Chemical Y have results that are statistically significantly different.  
