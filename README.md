@@ -85,6 +85,22 @@ Comments: specifying "var.equal = TRUE" forces R to run an equal variance t-test
 
 which runs a t-test and does not assume equal SD.  This is the same in Graphpad Prism as selecting "Unpaired t-test with Welch's correction. Do not assume equal SD".  
 
+
+#### Unpaired t-test using python
+
+        from scipy import stats
+        import numpy as np
+        
+        # assumes data has been imported via one of any means into two numpy arrays
+        arr1 = np.array([54.0,23.0,45.0,54.0,45.0,43.0],dtype=float)
+        arr2 = np.array([43.0,34.0,65.0,77.0,46.0,65.0],dtype=float)
+        ttest_identMeans = stats.ttest_ind(arr1,arr2) # t-test with identical means
+        # to test with unequal variances, (Welch'e test), assign equal_var = False
+        ttest_uneqVariance = stats.ttest_ind(arr1,arr2, equal_var = False)
+        
+        print(ttest_identMeans)
+        print(ttest_uneqVariance)
+	
 Optional Challenge questions:
 1) Are the data normally distributed?
 2) How would you run a non-parametric test using Graphpad Prism and R?
