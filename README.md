@@ -5,6 +5,8 @@ The student's t-test was first created by William Gosset, while doing analyses o
 
 There are a few different ways to run the t-test, but the methods to perform the test on each variant is similar in GraphPad Prism and R.  Briefly, the tails for the t-test refer to how the data should be measured, meaning [does the data go in one direction, or two](https://stats.idre.ucla.edu/other/mult-pkg/faq/general/faq-what-are-the-differences-between-one-tailed-and-two-tailed-tests/).  Nearly all biological experiments should use a two-tailed t-test.  A paired t-test is typically used for datasets that are linked to each other in some way, such as treating cells at timepoint 1, then treating the same cells at timepoint 2, and testing whether the results are statistically significant. An unpaired t-test tests whether two unrelated datasets, such as if cells treated with Chemical X versus cells treated with Chemical Y have results that are statistically significantly different.  
 
+Additionally, a method using scipy with python has been added.
+
 If you are uncertain about which test to use, typically a two-tailed, unpaired t-test is what you want. 
 
 The files for this are attached, as well as the Challenge Question Solutions.
